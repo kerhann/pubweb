@@ -11,3 +11,7 @@ mizzao:bootstrap-3
 electricjesus:superslides
 hammer:hammer
 mrt:ionicons
+tap:i18n
+tap:i18n-db
+tap:i18n-ui
+twbs:bootstrap

@@ -1,4 +1,4 @@
-Menu = new Mongo.Collection("menu");
+Menu = new TAPi18n.Collection("menu");
 
 
 if (Meteor.isClient) {
@@ -104,7 +104,9 @@ if (Meteor.isClient) {
 }
 
 if (Meteor.isServer) {
+
   Meteor.startup(function () {
     // code to run on server at startup
+    
   });
 }
