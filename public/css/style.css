@@ -232,11 +232,11 @@ a:focus {
 
 .menu,
 .body-push {
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-		-ms-transition: all .3s ease;
-		 -o-transition: all .3s ease;
-			transition: all .3s ease;
+	-webkit-transition: all .6s ease;
+	   -moz-transition: all .6s ease;
+		-ms-transition: all .6s ease;
+		 -o-transition: all .6s ease;
+			transition: all .6s ease;
 }
 
 #menuToggle {
@@ -338,7 +338,7 @@ input {
     background: #1D1D25;
 }
 #slides ul li img {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 .slides-pagination {
     margin-bottom: -40px;
@@ -380,7 +380,7 @@ input {
 
 #bannertext {
     position: fixed;
-    top: 33%;
+    top: 30%;
     right: 0;
     left: 0;
     z-index: 2;
@@ -405,7 +405,7 @@ input {
     letter-spacing: 2px;
 }
 #bannertext p {
-    margin-top:25px;
+    margin-top:65px;
 }
 #bannertext hr {
 	border: 1px solid white;
@@ -427,6 +427,8 @@ input {
         font-size: 13px;
     }
 }
+
+
 
 
 /* Portfolio Section*/
@@ -586,7 +588,13 @@ input {
 	color: white;
 	margin-top: 15px;
 }
-
+#feat {
+	padding-bottom: 40px;
+	padding-top: 40px;
+	margin-top: 50px;
+	background: #2f2f2f;
+	color: white;
+}
 /* FOOTER */
 #f {
 	padding-bottom: 40px;

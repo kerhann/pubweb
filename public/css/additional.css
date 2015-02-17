@@ -1,0 +1,27 @@
+/* SEPARATORS WITH MOVING IMAGE */
+.sep {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height: 450px;
+	position: relative;
+   width: 100%;
+}
+.s01 {
+	background-image: url(/img/slide-2.jpg);
+   background-size: cover;
+}
+#languages {
+	position: absolute;
+	top: 23px;
+	right: 79px;
+	z-index: 11;
+   display: block;
+}
+#loginButtonDiv {
+	position: fixed;
+	top: 23px;
+	right: 200px;
+	z-index: 14;
+}
+

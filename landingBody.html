@@ -1,73 +1,36 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/img/favicon.ico">
-
-    <title>Theme 15 - LandingSumo.com</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/css/superslides.css" rel="stylesheet">
-    <link href="/css/ionicons.min.css" rel="stylesheet">
-    <link href="/css/cubeportfolio.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/js/ie10-viewport-bug-workaround.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
+<template name="landingBody">
+                 <div id="languages">{{> i18n_dropdown}}</div> 
+          
 	<!-- Menu --> 
     <nav class="menu" id="theMenu">
 		<div class="menu-wrap">
-      {{#each menutitle}}
-        {{> menu_title}}
-      {{/each}}
-        <i class="ion-android-close menu-close"></i>
-      {{#each menu}}
-        {{> menuitem}}
-      {{/each}}      
+      <h1 class="logo menuitem"><a href="#">{{_ "menu_title"}}</a></h1>
+      <i class="ion-android-close menu-close menuitem"></i>
+      <a href="#home" class="smoothScroll menuitem">{{_ "menu_home"}}</a>
+      <a href="#glance" class="smoothScroll menuitem">{{_ "menu_glance"}}</a>    
+      <a href="#screenshots" class="smoothScroll menuitem">{{_ "menu_screenshots"}}</a> 
+      <a href="#features" class="smoothScroll menuitem">{{_ "menu_features"}}</a> 
+      <a href="#use" class="smoothScroll menuitem">{{_ "menu_useCases"}}</a> 
+      <a href="#blog" class="smoothScroll menuitem">{{_ "menu_blog"}}</a> 
+      <a href="#businesses" class="smoothScroll menuitem">{{_ "menu_businesses"}}</a> 
+      <a href="#contact" class="smoothScroll menuitem">{{_ "menu_contact"}}</a> 
 		</div>
-		
 		<!-- Menu button -->
-		<div id="menuToggle"><i class="ion-grid"></i></div>
+       <div id="menuToggle"><i id="toggleIcon" class="ion-chevron-left"></i></div>
+
 	</nav>    
-      
-  {{> hello}}
-      
-
-</body>
-
-    <template name="menu_title">
-			<h1 class="logo"><a href="#">{{text}}</a></h1>
-    </template>
-
-
-    <template name="menuitem">
-			<a href="#{{section}}" class="smoothScroll">{{text}}</a>
-    </template>
-
-<template name="hello">
-    
+      <div id="loginButtonDiv">
+        <ul class="">
+          {{> loginButtons align="left"}}
+        </ul>
+      </div>
+     
     <!-- ********** SLIDES ********** -->
     <section id="home">
       <section id="slides">
          <ul class="slides-container">
             <li>
-               <img src="/img/slide-1.jpg" alt="">
+               <img src="/img/skyline1.jpg" alt="">
             </li>
             <li>
                <img src="/img/slide-2.jpg" alt="">
@@ -76,12 +39,14 @@
                <img src="/img/slide-3.jpg" alt="">
             </li>
          </ul>
+         
          <div id="bannertext">
-            <h1>nGeos</h1>
+            <h1>{{_ "site_name"}}</h1>
             <hr class="aligncenter">
-            <h3>Make your point[s]. Leave your mark[s].</h3>
-            <p><button class="btn btn-lg btn-white btn-design">Learn More</button> <button class="btn btn-lg btn-clear btn-design">Download</button></p>
+            <h3>{{_ "motto"}}</h3> 
+            <p class="buttons_header"><a href="#glance" class="smoothScroll"><button class="btn btn-lg btn-white btn-design">{{_ "learn_more"}}</button></a> <button class="btn btn-lg btn-clear btn-design">{{_ "download"}}</button></p>
          </div>
+         
          <!-- end:Banner text -->
          <nav class="slides-navigation">
             <a href="index.html#" class="next">
@@ -95,13 +60,13 @@
     </section>
       <!-- END SLIDES SECTION -->
     
-	<!-- ********** FEATURES ********** -->
-
+  
+ 	<!-- ********** AT A GLANCE ********** -->
 
     
-
     
     <section id="glance">
+
 	<div class="container">
 		<div class="row mtb2 centered">
 			<div class="col-md-4 w">
@@ -131,135 +96,185 @@
 		</div><!--/row -->
 	</div><!-- /.container -->
 </section>
+   
+   
 	<!-- ********** PORTFOLIO SECTION ********** -->
- <section id="screenshots">	
-        <div id="grid-container" class="cbp-l-grid-fullScreen">
-           <ul>
-              <li class="cbp-item identity">
-                 <a class="cbp-caption cbp-lightbox" data-title="Image" href="/img/portfolio/1.jpg">
+   
+   
+<section id="screenshots">	
+
+
+       <div class="cbp-panel">
+        <div id="grid-container" class="cbp-l-grid-gallery">
+            <div class="cbp-item">
+                <a class="cbp-caption cbp-lightbox" data-title="{{_ "shot1_title" }}" href="img/screenshots/shot-b-1.png">
                     <div class="cbp-caption-defaultWrap">
-                       <img src="/img/portfolio/1.jpg" alt="" class="img-responsive">
+                        <img src="img/screenshots/shot-s-1.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
-                       <div class="cbp-l-caption-alignCenter">
-                          <div class="cbp-l-caption-body">
-                             <div class="cbp-l-caption-title">Image LightBox</div>
-                             <div class="cbp-l-caption-desc">by John Doe</div>
-                          </div>
-                       </div>
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">{{_ "shot1_caption" }}</div>
+                                <div class="cbp-l-caption-desc">{{_ "shot1_description" }}</div>
+                            </div>
+                        </div>
                     </div>
-                 </a>
-              </li>
-              <!-- end:Item -->
-              <li class="cbp-item web-design">
-                 <a class="cbp-caption cbp-lightbox" data-title="Image" href="/img/portfolio/2.jpg">
+                </a>
+            </div>
+            <div class="cbp-item">
+                <a class="cbp-caption cbp-lightbox" data-title="{{_ "shot6_title" }}" href="img/screenshots/shot-b-6.png">
                     <div class="cbp-caption-defaultWrap">
-                       <img src="/img/portfolio/2.jpg" alt="" class="img-responsive">
+                        <img src="img/screenshots/shot-s-6.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
-                       <div class="cbp-l-caption-alignCenter">
-                          <div class="cbp-l-caption-body">
-                             <div class="cbp-l-caption-title">Image LightBox</div>
-                             <div class="cbp-l-caption-desc">by John Doe</div>
-                          </div>
-                       </div>
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">{{_ "shot6_caption" }}</div>
+                                <div class="cbp-l-caption-desc">{{_ "shot6_description" }}</div>
+                            </div>
+                        </div>
                     </div>
-                 </a>
-              </li>
-              <!-- end:Item -->
-              <li class="cbp-item graphic identity">
-                 <a class="cbp-caption cbp-lightbox" data-title="Image" href="/img/portfolio/3.jpg">
+                </a>
+            </div>
+            <div class="cbp-item">
+                <a class="cbp-caption cbp-lightbox" data-title="{{_ "shot2_title" }}"
+                   href="img/screenshots/shot-b-2.png">
                     <div class="cbp-caption-defaultWrap">
-                       <img src="/img/portfolio/3.jpg" alt="" class="img-responsive">
+                        <img src="img/screenshots/shot-s-2.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
-                       <div class="cbp-l-caption-alignCenter">
-                          <div class="cbp-l-caption-body">
-                             <div class="cbp-l-caption-title">Image LightBox</div>
-                             <div class="cbp-l-caption-desc">by John Doe</div>
-                          </div>
-                       </div>
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">{{_ "shot2_caption" }}</div>
+                                <div class="cbp-l-caption-desc">{{_ "shot2_description" }}</div>
+                            </div>
+                        </div>
                     </div>
-                 </a>
-              </li>
-              <!-- end:Item -->
-              <li class="cbp-item graphic identity">
-                 <a class="cbp-caption cbp-lightbox" data-title="Image" href="/img/portfolio/4.jpg">
+                </a>
+            </div>
+            <div class="cbp-item">
+                <a class="cbp-caption cbp-lightbox" data-title="{{_ "shot3_title" }}"
+                   href="img/screenshots/shot-b-3.png">
                     <div class="cbp-caption-defaultWrap">
-                       <img src="/img/portfolio/4.jpg" alt="" class="img-responsive">
+                        <img src="img/screenshots/shot-s-3.png" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
-                       <div class="cbp-l-caption-alignCenter">
-                          <div class="cbp-l-caption-body">
-                             <div class="cbp-l-caption-title">Image LightBox</div>
-                             <div class="cbp-l-caption-desc">by John Doe</div>
-                          </div>
-                       </div>
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">{{_ "shot3_caption" }}</div>
+                                <div class="cbp-l-caption-desc">{{_ "shot3_description" }}</div>
+                            </div>
+                        </div>
                     </div>
-                 </a>
-              </li>
-              <!-- end:Item -->
-           </ul>
-        </div><!--/grid-container-->
-	
+                </a>
+            </div>
+            <div class="cbp-item">
+                <a class="cbp-caption cbp-lightbox" data-title="{{_ "shot4_title" }}"
+                   href="img/screenshots/shot-b-4.png">
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="img/screenshots/shot-s-4.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">{{_ "shot4_caption" }}</div>
+                                <div class="cbp-l-caption-desc">{{_ "shot4_description" }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cbp-item">
+                <a class="cbp-caption cbp-lightbox" data-title="{{_ "shot5_title" }}"
+                   href="img/screenshots/shot-b-5.png">
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="img/screenshots/shot-s-5.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">{{_ "shot5_caption" }}</div>
+                                <div class="cbp-l-caption-desc">{{_ "shot5_description" }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+</div>
+   </div>
+
+  
 </section>
 
+   
+   
+   
+   
+   
+   
+   
+   
 <section id="features">
-	<!-- ********** SERVICES SECTION ********** -->
+ <div id="feat">
+
 	<div class="container">
-		<div class="row mtb centered">
+		<!--<div class="row mtb centered">
 			<div class="col-md-6 col-md-offset-3 w">
-				<h5>Features</h5>
+				<h5>{{_ "menu_features" }}</h5>
 				<hr class="aligncenter">
 			</div>
-		</div><!--/row -->
+		</div>-->
 		
 		<div class="row mtb centered">
 			<div class="col-md-3">
 				<div class="ser w">
-					<i class="icon ion-settings"></i>
-					<h5>Web Design</h5>
+					<i class="icon ion-compose"></i>
+					<h5>{{_ "tile1_title" }}</h5>
 					<hr class="aligncenter">
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+					<p>{{_ "tile1_text" }}</p>
 				</div>
 			</div><!--/col-md-3 -->
 			<div class="col-md-3">
 				<div class="ser w">
-					<i class="icon ion-chatbubble-working"></i>
-					<h5>Social Media</h5>
+					<i class="icon ion-headphone"></i>
+					<h5>{{_ "tile2_title" }}</h5>
 					<hr class="aligncenter">
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+					<p>{{_ "tile2_text" }}</p>
 				</div>
 			</div><!--/col-md-3 -->
 			<div class="col-md-3">
 				<div class="ser w">
-					<i class="icon ion-beaker"></i>
-					<h5>Development</h5>
+					<i class="icon ion-eye"></i>
+					<h5>{{_ "tile3_title" }}</h5>
 					<hr class="aligncenter">
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+					<p>{{_ "tile3_text" }}</p>
 				</div>
 			</div><!--/col-md-3 -->
 			<div class="col-md-3">
 				<div class="ser w">
-					<i class="icon ion-trophy"></i>
-					<h5>Award Support</h5>
+					<i class="icon ion-lightbulb"></i>
+					<h5>{{_ "tile4_title" }}</h5>
 					<hr class="aligncenter">
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+					<p>{{_ "tile4_text" }}</p>
 				</div>
 			</div><!--/col-md-3 -->
 		</div><!--/row -->
 	</div><!--/container -->
+  </div>
 </section>
 
+  <!-- ********** PARALLAX SEPARATOR SECTION ********** -->
+	<div class="sep s01 clear" data-stellar-background-ratio="0.5"><div id="map-canvas"></div></div>
+  
 	<!-- ********** TESTIMONIAL SECTION ********** -->
-	<div id="t" class="carousel slide" data-ride="carousel">
+	<!--<div id="t" class="carousel slide" data-ride="carousel">
     	<div class="col-md-6 col-md-offset-3 centered">
     		<h5>Love From Our Users</h5>
-    		<hr class="aligncenter">
-		    <!-- Carousel
-		    ================================================== -->
+    		<hr class="aligncenter">-->
+		    <!-- Carousel ================================================== -->
 		      <!-- Indicators -->
-		      <ol class="carousel-indicators">
+		 <!--     <ol class="carousel-indicators">
 		        <li data-target="#mint" data-slide-to="0" class="active"></li>
 		        <li data-target="#mint" data-slide-to="1"></li>
 		        <li data-target="#mint" data-slide-to="2"></li>
@@ -270,25 +285,25 @@
 				        <h4>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h4>
 				        <p>SHARON SMITH</p>
 					</div>
-				</div><!-- /item -->
+				</div>--><!-- /item -->
 				
-		        <div class="item">
+		 <!--       <div class="item">
 		        	<div class="centered mtb">
 				        <h4>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h4>
 				        <p>SAM MANNING</p>
 					</div>
-				</div><!-- /item -->
+				</div>--><!-- /item -->
 
-		        <div class="item">
+	<!--	        <div class="item">
 		        	<div class="centered mtb">
 				        <h4>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h4>
 				        <p>PAUL STEVENSON</p>
 					</div>
-				</div><!-- /item -->
-	    	
-			</div><!--/carousel-inner -->
-    	</div><!--/col-md-6 -->
-	</div><!--/T -->
+				</div>--><!-- /item -->
+	   <!-- 	
+			</div>--><!--/carousel-inner -->
+    	<!--</div>--><!--/col-md-6 -->
+	<!--</div>--><!--/T -->
 
 <section id="use">
 	<!-- ********** THEME FEATURES SECTION ********** -->
@@ -296,58 +311,58 @@
 		<div class="container">
 			<div class="row mtb">
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-monitor-outline"></i>
+					<i class="icon ion-ios7-ionic-outline"></i>
 				</div>
 				<div class="col-md-3 w">
-					<h5>In the street</h5>
+					<h5>{{_ "usetile1_title" }}</h5>
 					<hr>
-					<p>Subscribe to specific channels or larger thematics and be informed of what your friends have posted at your location, know that the pizzeria across the corner is offering a special discount today, learn that Napoleon used to have a drink in the area, watch a footage your favorite humorist made at that location, etc.</p>
+					<p>{{_ "usetile1_text" }}</p>
 				</div>
 	
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-paper-outline"></i>
+					<i class="icon ion-ios7-people-outline"></i>
 				</div>
 				<div class="col-md-3 w">
-					<h5>In a community</h5>
+					<h5>{{_ "usetile2_title" }}</h5>
 					<hr>
-					<p>Whether at work, school, university..., make your community's premises truly interactive for everyone. Be informed of or post specificities in relation to your direct surroundings, e.g. security notices, cancellation of events, or anything else.</p>
+					<p>{{_ "usetile2_text" }}</p>
 				</div>
 	
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-browsers-outline"></i>
+					<i class="icon ion-ios7-world-outline"></i>
 				</div>
 				<div class="col-md-3 w">
-					<h5>On trip</h5>
+					<h5>{{_ "usetile3_title" }}</h5>
 					<hr>
-					<p>Imagine that you are visiting the Tour Eiffel in Paris. nGeos allows you to read / watch / listen to your friends' posts there, or you can pick and choose an interactive travel guide, a guide made by an inhabitant...</p>
+					<p>{{_ "usetile3_text" }}</p>
 				</div>
 			</div><!--/row -->
 			<div class="row mtb">
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-medkit-outline"></i>
+					<i class="icon ion-ios7-information-outline"></i>
 				</div>
 				<div class="col-md-3 w">
-					<h5>For a visit</h5>
+					<h5>{{_ "usetile4_title" }}</h5>
 					<hr>
-					<p>Visit an area in accordance with your preferences, be they through a travel guide (with several itineraries) or following different interests: historical visit, funny facts, musical walk,... You can also create your own guide and decide to sell it.</p>
+					<p>{{_ "usetile4_text" }}</p>
 				</div>
 	
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-cart-outline"></i>
+					<i class="icon ion-ios7-search"></i>
 				</div>
 				<div class="col-md-3 w">
-					<h5>For playing</h5>
+					<h5>{{_ "usetile5_title" }}</h5>
 					<hr>
-					<p>Now that you know more about nGeos, you can easily imagine what an interactive treasure hunting or detective game could look like with nGeos. Hide clues and messages at specific locations, and let people participate and enjoy your game...</p>
+					<p>{{_ "usetile5_text" }}</p>
 				</div>
 	
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-box-outline"></i>
+					<i class="icon ion-ios7-lightbulb-outline"></i>
 				</div>
 				<div class="col-md-3 w">
-					<h5>For anything</h5>
+					<h5>{{_ "usetile6_title" }}</h5>
 					<hr>
-					<p>nGeos is what you make of it. It is up to you to leave your mark[s] or to follow others', to use it for cultural, travel, entertainment, commercial, private, game or any purposes. But there is surely a way you would enjoy using it!</p>
+					<p>{{_ "usetile6_text" }}</p>
 				</div>
 			</div><!--/row -->
 		</div><!--/container -->
@@ -368,7 +383,7 @@
 	<!-- ********** BLOG SECTION ********** -->
 	<div class="container">
 		<div class="row mtb centered w">
-			<h5>From Our Blog</h5>
+			<h5>{{_ "from_blog"}}</h5>
 			<hr class="aligncenter">
 		</div><!--/row -->
 		<div class="row w">
@@ -415,10 +430,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 w centered">
-					<h5 class="mb">Want To Know Our Latest News?</h5>
+					<h5 class="mb">{{_ "teasing_newsletter" }}</h5>
 					<form role="form" action="register.php" method="post" enctype="plain"> 
-	    				<input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-						<button class='btn btn-lg btn-clear subscribe-submit' type="submit">Subscribe</button>
+	    				<input type="email" name="email" class="subscribe-input" placeholder="{{_ "email_enter" }}" required>
+						<button class='btn btn-lg btn-clear subscribe-submit' type="submit">{{_ "subscribe" }}</button>
 					</form>
 				</div><!--/col-md-6-->
 			</div><!--/row -->
@@ -437,10 +452,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 centered">
-					<h6>COPYRIGHT 2014 | LANDING SUMO</h6>
+					<h6>COPYRIGHT 2014 | NGEOS</h6>
 				</div>
 			</div>
 		</div>
 	</div><!--/copyright -->
-    
+
 </template>
