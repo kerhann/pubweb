@@ -1,5 +1,23 @@
 {
   "subscribe": "S'inscrire",
    "email_enter": "Entrez votre adresse email...",
-   "teasing_newsletter": "Envie de rester informé ?"
+   "teasing_newsletter": "Envie de rester informé ?",
+   
+   "more_info": "Informations",
+   "terms": "Conditions d'utilisation (CGU)",
+   "privacy": "Vie privée",
+   "businesses": "Entreprises",
+   "about": "A propos de nGeos",
+   
+   "contact_us": "Contactez-nous",
+   "contact_form": "Formulaire de contact",
+   "contact_name": "Votre nom",
+   "contact_email": "Votre adresse email",
+   "contact_message": "Votre message",
+   "contact_submit": "Envoyer",
+   
+   "help": "Aide",
+   "faqs": "FAQs",
+   "forum": "Forum",
+   "support": "Support"
 }

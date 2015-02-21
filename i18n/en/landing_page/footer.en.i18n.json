@@ -1,5 +1,23 @@
 {
-  "subscribe": "Subscribe",
+   "subscribe": "Subscribe",
    "email_enter": "Enter your e-mail address...",
-   "teasing_newsletter": "Want To Know Our Latest News?"
+   "teasing_newsletter": "Want To Know Our Latest News?",
+   
+   "more_info": "More information",
+   "terms": "Terms of use",
+   "privacy": "Privacy",
+   "businesses": "Businesses",
+   "about": "About",
+   
+   "contact_us": "Contact us",
+   "contact_form": "Contact form",
+   "contact_name": "Your name",
+   "contact_email": "Your email",
+   "contact_message": "Your message",
+   "contact_submit": "Submit",
+   
+   "help": "Help",
+   "faqs": "FAQs",
+   "forum": "Forum",
+   "support": "Support"
 }
