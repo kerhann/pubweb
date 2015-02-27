@@ -1,0 +1,54 @@
+{
+  "L_B_no_service": "No login services configured",
+  
+  "L_B_DI_new_password": "New password",
+  "L_B_DI_set_password": "Set password",
+  "L_B_DI_password_reset": "Password reset.",
+  "L_B_DI_now_logged_in": "You are now logged in as",
+  "L_B_DI_dismiss": "Dismiss",
+  "L_B_DI_choose_password": "Choose a password",
+  "L_B_DI_create_account": "Create account",
+  "L_B_DI_email_verified": "Email verified.",
+  "L_B_DI_copy_details": "Now, copy over some details.",
+
+  "L_B_DR_close": "Close",
+  "L_B_DR_change_password": "Change password",
+  "L_B_DR_sign_out": "Sign out",
+  "L_B_DR_sign_in_up": "Sign in / up",
+  "L_B_DR_or": "or",
+  "L_B_DR_create_account": "Create account",
+  "L_B_DR_sign_in": "Sign in",
+  "L_B_DR_forgot_password": "Forgot password",
+  "L_B_DR_email": "Email",
+  "L_B_DR_reset_password": "Reset password",
+  
+  "L_B_SI_sign_in_with": "Sign in with",
+  "L_B_SI_sign_out": "Sign out",
+  "L_B_SI_configure": "Configure",
+  
+  "ERROR_length_username": "Username must be at least 3 characters long",
+  "ERROR_length_password": "Password must be at least 6 characters long",
+  "ERROR_invalid_email": "Invalid email",
+  "ERROR_incorrect_password": "Password is incorrect",
+  "ERROR_usernotfound": "User not found",
+  "ERROR_email_exists": "Email already exists",
+  
+  "FIELD_login_username_or_email": "Username or Email",
+  "FIELD_login_username": "Username",
+  "FIELD_login_email": "Email",
+  "FIELD_login_password": "Password",
+
+  "FIELD_signup_username": "Username",
+  "FIELD_signup_email": "Email",
+  "FIELD_signup_email_optional": "Email (optional)",
+  "FIELD_signup_password": "Password",
+  "FIELD_signup_password_again": "Password (again)",
+  
+  "FIELD_changepass_current": "Current Password",
+  "FIELD_changepass_new": "New Password",
+  "FIELD_changepass_new_again": "New Password (again)",
+  
+  "INFO_forgotpass_emailsent": "Email sent.",
+  "ERROR_forgotpass_invalid_email": "Invalid email"
+  
+}

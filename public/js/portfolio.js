@@ -50,3 +50,4 @@ $('#grid-container').cubeportfolio({
                 });
         }
     });
+$('#grid-container-bis').cubeportfolio();

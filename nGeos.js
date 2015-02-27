@@ -29,7 +29,7 @@ if (Meteor.isClient) {
         TAPi18n.setLanguage(getUserLanguage())
             .done(function() {
                 Session.set("showLoadingIndicator", false);
-                accountsUIBootstrap3.setLanguage(getUserLanguage());
+                //accountsUIBootstrap3.setLanguage(getUserLanguage());
             })
             .fail(function(error_message) {
                 // Handle the situation
@@ -52,7 +52,7 @@ if (Meteor.isClient) {
 
 
         $('.form-control').change(function() {
-            accountsUIBootstrap3.setLanguage(this.value);
+            //accountsUIBootstrap3.setLanguage(this.value);
         });
 
 
@@ -80,6 +80,20 @@ if (Meteor.isClient) {
         $(document).ready(function() {
             $(window).scroll(function() {
                 EasyPeasyParallax();
+                
+                $('#some-button').magnificPopup({
+    items: [
+      {
+        src: 'http://vimeo.com/123123',
+        type: 'iframe' // this overrides default type
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is default type
+});
+
             });
 
             //Portfolio

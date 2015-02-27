@@ -1,0 +1,50 @@
+{
+  "L_B_no_service": "Pas de service de connexion configuré",
+  
+  "L_B_DI_new_password": "Nouveau mot de passe",
+  "L_B_DI_set_password": "Définir un mot de passe",
+  "L_B_DI_password_reset": "Mot de passe réinitialisé.",
+  "L_B_DI_now_logged_in": "Vous êtes maintenant connecté en tant que",
+  "L_B_DI_dismiss": "Dismiss",
+  "L_B_DI_choose_password": "Choisissez un mot de passe",
+  "L_B_DI_create_account": "Créer un compte",
+  "L_B_DI_email_verified": "Email vérifié.",
+  "L_B_DI_copy_details": "Maintenant, copiez ces quelques détails.",
+
+  "L_B_DR_close": "Fermer",
+  "L_B_DR_change_password": "Changer le mot de passe",
+  "L_B_DR_sign_out": "Déconnexion",
+  "L_B_DR_sign_in_up": "Connexion / Inscription",
+  "L_B_DR_or": "ou",
+  "L_B_DR_create_account": "Créer un compte",
+  "L_B_DR_sign_in": "Connexion",
+  "L_B_DR_forgot_password": "Mot de passe oublié",
+  "L_B_DR_email": "Email",
+  "L_B_DR_reset_password": "Réinitialiser le mot de passe",
+  
+  "L_B_SI_sign_in_with": "Se connecter avec",
+  "L_B_SI_sign_out": "Déconnexion",
+  "L_B_SI_configure": "Configurer",
+  
+  "ERROR_length_username": "Le nom d'utilisateur doit comprendre plus de 3 caractères",
+  "ERROR_length_password": "Le mot de passe doit comprendre au moins 6 caractères",
+  "ERROR_invalid_email": "Email invalide",
+  "ERROR_incorrect_password": "Mot de passe incorrect",
+  "ERROR_usernotfound": "Utilisateur non trouvé",
+  "ERROR_email_exists": "L'email existe déjà.",
+  
+  "FIELD_login_username_or_email": "Nom d'utilisateur ou email",
+  "FIELD_login_username": "Nom d'utilisateur",
+  "FIELD_login_email": "Email",
+  "FIELD_login_password": "Mot de passe",
+
+  "FIELD_signup_username": "Nom d'utilisateur",
+  "FIELD_signup_email": "Email",
+  "FIELD_signup_email_optional": "Email (optionnel)",
+  "FIELD_signup_password": "Mot de passe",
+  "FIELD_signup_password_again": "Mot de passe (répétez)",
+  
+  "INFO_forgotpass_emailsent": "Email envoyé.",
+  "ERROR_forgotpass_invalid_email": "Email invalide"
+  
+}

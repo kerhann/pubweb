@@ -57,6 +57,7 @@
 }
 .loginButtonDiv a {
     color: #FFFFFF;
+    text-decoration:none;
 }
 .loginButtonDiv a:hover,
 a:focus {
@@ -66,6 +67,7 @@ a:focus {
 #forgot-password-link {
     color: #03C9A9;
     text-transform: none;
+    text-decoration:none;
 }
 .loginButtonDiv #signup-link,
 #forgot-password-link,
@@ -94,5 +96,35 @@ a:focus {
     -ms-transition: all 0.8s ease;
     -o-transition: all 0.8s ease;
     transition: all 0.8s ease;
+}
+
+hr.white {
+	border: 1px solid #ffffff;
+	width: 40px;
+}
+
+.news {
+	
+}
+
+.news .container {
+	width: 100%;
+	height: 400px;
+	background-color: #03C9A9;
+	vertical-align: middle;
+	padding-top: 80px;
+}
+
+.box-video {
+
+text-align: center;
+
+	
+}
+
+.section-bg-color h3, .section-bg-color h1,.section-bg-color h5, .section-bg-color p {
+	margin-left: 25px;
+	margin-right: 25px;
+	color: white;
 }
 

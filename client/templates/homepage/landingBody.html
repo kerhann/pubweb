@@ -57,10 +57,10 @@
 			<!-- end:Banner text -->
 			<nav class="slides-navigation">
 				<a href="index.html#" class="next">
-					<i class="ion-ios7-arrow-forward"></i>
+					<i class="ion-ios-arrow-forward"></i>
 				</a>
 				<a href="index.html#" class="prev">
-					<i class="ion-ios7-arrow-back"></i>
+					<i class="ion-ios-arrow-back"></i>
 				</a>
 			</nav>
 		</section>
@@ -72,42 +72,57 @@
 
 
 
-	<section id="glance">
+    <section class="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 box-video">
+          	
+       <a class="" id="dzdd" data-title="nGeos" href="http://vimeo.com/74216460?autoplay=0&loop=1">
+            <img src="/img/ngeos-vid.png" id="some-button" alt="Our 2-minute video" width="30%"/>
+        </a>
 
-		<div class="container">
-			<div class="row mtb2 centered">
-				<div class="col-md-4 w">
-					<div class="circle-icon">
-						<div class="icon ion-location"></div>
-					</div>
-					<h5>Leave your marks</h5>
-					<hr class="aligncenter">
-					<p>Wherever you are located, leave text, audio, video messages and pictures and make them available to your friends or to the general public travelling to that location.</p>
-				</div>
-				<!--/col-md-4-->
-				<div class="col-md-4 w">
-					<div class="circle-icon">
-						<div class="icon ion-android-contacts"></div>
-					</div>
-					<h5>Follow your friends</h5>
-					<hr class="aligncenter">
-					<p>Follow your friends' channels and see, watch and hear their marks in your surroundings. Maybe they left you a message across the street or at the far side of the Earth.</p>
-				</div>
-				<!--/col-md-4-->
-				<div class="col-md-4 w">
-					<div class="circle-icon">
-						<div class="icon ion-navigate"></div>
-					</div>
-					<h5>Travel differently</h5>
-					<hr class="aligncenter">
-					<p>Subscribe to cultural, humoristic, historical, insolite, private, commercial [etc.] channels and add a new dimension to your travels, visits or simple walks.</p>
-				</div>
-				<!--/col-md-4-->
-			</div>
-			<!--/row -->
-		</div>
-		<!-- /.container -->
-	</section>
+
+<!--
+
+<div id="grid-container-bis">
+    <div class="cbp-item">
+        <a class="cbp-lightbox" data-title="nGeos" href="http://vimeo.com/74216460?autoplay=0&loop=1">
+            <img src="/img/ngeos-vid.png" alt="Our 2-minute video" width="100%"/>
+        </a>
+    </div>
+</div>
+            <p></p><p></p><p></p>
+<video id="example_video_1" class="video-js vjs-default-skin"
+  controls preload="auto" width="640" height="480"
+  poster="/img/ngeos-vid.png"
+  data-setup='{"example_option":true}'>
+ <source src="/vid/ngeos-vid-1.mp4" type='video/mp4' />
+ <source src="/vid/ngeos-vid-1.webm" type='video/webm' />
+ <source src="/vid/ngeos-vid-1.ogv" type='video/ogg' />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+-->
+
+          </div>
+
+          <div class="col-sm-6 section-bg-color">
+            <div class="row">
+              <div class="col-sm-3 mt">
+                <div class="circle-icon">
+                  <div class="icon ion-ios-rewind-outline"></div>
+                </div>
+              </div><!--/col-sm-4-->
+              <div class="col-sm-9">
+                <h5>nGeos at a glance</h5>
+                <h3>Watch our 2-minute video</h3>
+                <p>Get a taste of nGeos and its features in 2 minutes...</p>
+              </div>
+            </div><!--/row-->
+          </div><!-- /col-sm-6-->
+        </div><!--/row -->
+      </div><!--/container -->
+    </section><!--/NEWS -->
+
 
 
 	<!-- ********** PORTFOLIO SECTION ********** -->
@@ -115,8 +130,11 @@
 
 	<section id="screenshots">
 
-
-		<div class="cbp-panel">
+			<div class="row mtb centered w">
+				<h5>{{_ "screenshots" }}</h5>
+				<hr class="aligncenter">
+			</div>
+		<div class="cbp-panel portfolio">
 			<div id="grid-container" class="cbp-l-grid-gallery">
 				<div class="cbp-item">
 					<a class="cbp-caption cbp-lightbox" data-title="{{_ " shot1_title " }}" href="img/screenshots/shot-b-1.png">
@@ -233,7 +251,10 @@
 				<hr class="aligncenter">
 			</div>
 		</div>-->
-
+			<div class="row mtb centered w">
+				<h5>{{_ "philosophy" }}</h5>
+				<hr class="aligncenter white">
+			</div>
 				<div class="row mtb centered">
 					<div class="col-md-3">
 						<div class="ser w">
@@ -278,10 +299,10 @@
 		</div>
 	</section>
 
-	<!-- ********** PARALLAX SEPARATOR SECTION ********** -->
-	<div class="sep s01 clear" data-stellar-background-ratio="0.5">
+	<!-- ********** PARALLAX SEPARATOR SECTION ********** 
+	<div class="sep s01 clear" data-stellar-background-ratio="0.5">-->
 		<div id="map-canvas"></div>
-	</div>
+	<!--</div>-->
 
 	<!-- ********** TESTIMONIAL SECTION ********** -->
 	<!--<div id="t" class="carousel slide" data-ride="carousel">
@@ -332,8 +353,12 @@
 		<div id="g">
 			<div class="container">
 				<div class="row mtb">
+			<div class="row mtb centered w">
+				<h5>{{_ "use_title" }}</h5>
+				<hr class="aligncenter">
+			</div>
 					<div class="col-md-1 centered">
-						<i class="icon ion-ios7-ionic-outline"></i>
+						<i class="icon ion-ios-ionic-outline"></i>
 					</div>
 					<div class="col-md-3 w">
 						<h5>{{_ "usetile1_title" }}</h5>
@@ -342,7 +367,7 @@
 					</div>
 
 					<div class="col-md-1 centered">
-						<i class="icon ion-ios7-people-outline"></i>
+						<i class="icon ion-ios-people-outline"></i>
 					</div>
 					<div class="col-md-3 w">
 						<h5>{{_ "usetile2_title" }}</h5>
@@ -351,7 +376,7 @@
 					</div>
 
 					<div class="col-md-1 centered">
-						<i class="icon ion-ios7-world-outline"></i>
+						<i class="icon ion-ios-world-outline"></i>
 					</div>
 					<div class="col-md-3 w">
 						<h5>{{_ "usetile3_title" }}</h5>
@@ -362,7 +387,7 @@
 				<!--/row -->
 				<div class="row mtb">
 					<div class="col-md-1 centered">
-						<i class="icon ion-ios7-information-outline"></i>
+						<i class="icon ion-ios-information-outline"></i>
 					</div>
 					<div class="col-md-3 w">
 						<h5>{{_ "usetile4_title" }}</h5>
@@ -371,7 +396,7 @@
 					</div>
 
 					<div class="col-md-1 centered">
-						<i class="icon ion-ios7-search"></i>
+						<i class="icon ion-ios-search"></i>
 					</div>
 					<div class="col-md-3 w">
 						<h5>{{_ "usetile5_title" }}</h5>
@@ -380,7 +405,7 @@
 					</div>
 
 					<div class="col-md-1 centered">
-						<i class="icon ion-ios7-lightbulb-outline"></i>
+						<i class="icon ion-ios-lightbulb-outline"></i>
 					</div>
 					<div class="col-md-3 w">
 						<h5>{{_ "usetile6_title" }}</h5>
@@ -468,10 +493,12 @@
 	<!-- ********** FOOTER SECTION ********** -->
 	<div id="f">
 		<div class="container">
+			<div class="row mtb centered w">
+					<h5 class="mb">{{_ "teasing_newsletter" }}</h5>
+					<hr class="aligncenter white">
+			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 w centered">
-					<h5 class="mb">{{_ "teasing_newsletter" }}</h5>
-
 
 					<!-- Begin MailChimp Signup Form -->
 					<form action="//jeanmil.us10.list-manage.com/subscribe/post?u=44d195446168fe230f06a0693&amp;id=398545b8a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" role="form">
@@ -501,7 +528,7 @@
 
 			<div class="row mt">
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-information-outline"></i>
+					<i class="icon ion-ios-information-outline"></i>
 				</div>
 				<div class="col-md-3">
 					<h5>{{_ "more_info" }}</h5>
@@ -514,7 +541,7 @@
 					</p>
 				</div>
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-paperplane-outline"></i>
+					<i class="icon ion-ios-paperplane-outline"></i>
 				</div>
 				<div class="col-md-3">
 					<h5>{{_ "contact_us" }}</h5>
@@ -532,7 +559,7 @@
 					
 				</div>
 				<div class="col-md-1 centered">
-					<i class="icon ion-ios7-help-outline"></i>
+					<i class="icon ion-ios-help-outline"></i>
 				</div>
 				<div class="col-md-3">
 					<h5>{{_ "help" }}</h5>

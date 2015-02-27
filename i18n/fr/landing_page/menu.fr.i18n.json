@@ -2,10 +2,10 @@
   "menu_title": "nGeos",  
   
   "menu_home": "Accueil",
-  "menu_glance": "nGeos en 1 minute",
+  "menu_glance": "nGeos en 120 secondes",
   "menu_screenshots": "Captures d'écran",
-  "menu_features": "Caractéristiques",
-  "menu_useCases": "Utilisations possibles",
+  "menu_features": "Fonctionnalités",
+  "menu_useCases": "Exemples",
   "menu_blog": "Blog",
   "menu_businesses": "Entreprises",
   "menu_contact": "Contact"
